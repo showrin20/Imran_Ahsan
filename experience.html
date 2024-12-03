@@ -40,47 +40,75 @@
  </head>
  <body class="bg-gray-100">
   <!-- Navbar -->
+
+  
   <nav class="bg-custom-blue shadow">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-     <a class="text-xl font-bold text-gray-800 navbar-brand" href="#">
-      Imran Ahsan
-     </a>
-     <div class="flex items-center">
-      <ul class="hidden md:flex space-x-4">
-       <li>
-        <a class="navbar-link" href="index.html">
-         Home
-        </a>
-       </li>
-       <li>
-        <a class="navbar-link" href="research.html">
-         Research
-        </a>
-       </li>
-       <li>
-        <a class="navbar-link" href="experience.html">
-         Experience
-        </a>
-       </li>
-
-
-
-       
-       <li>
-        <a class="navbar-link" href="#contact">
-         Contact
-        </a>
-       </li>
-      </ul>
-      <form class="flex ml-4">
-       <input aria-label="Search" class="form-input px-4 py-2 rounded-l-md border border-gray-300" placeholder="Search..." type="search"/>
-       <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md" type="submit">
-        Search
-       </button>
-      </form>
-     </div>
+      <a class="text-xl font-bold text-gray-800 navbar-brand" href="#">
+        Imran Ahsan
+      </a>
+      <div class="flex items-center md:hidden">
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex items-center">
+        <ul id="mobile-menu" class="hidden md:flex space-x-4">
+          <li>
+            <a class="navbar-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="research.html">Research</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="experience.html">Experience</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Search bar only for desktop -->
+        <form class="hidden md:flex ml-4">
+          <input aria-label="Search" class="form-input px-4 py-2 rounded-l-md border border-gray-300" placeholder="Search..." type="search" />
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md" type="submit">Search</button>
+        </form>
+      </div>
     </div>
- </nav>
+    <!-- Mobile Menu -->
+    <ul id="mobile-dropdown-menu" class="md:hidden hidden flex-col space-y-2 px-4 py-2">
+      <li>
+        <a class="navbar-link" href="index.html">Home</a>
+      </li>
+      <li>
+        <a class="navbar-link" href="research.html">Research</a>
+      </li>
+      <li>
+        <a class="navbar-link" href="experience.html">Experience</a>
+      </li>
+      <li>
+        <a class="navbar-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-dropdown-menu');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+  
+
+
+
+
+
  <div style="margin-bottom: 20px;"></div><div style="margin-bottom: 20px;"></div><div></div>
 
 
