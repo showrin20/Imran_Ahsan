@@ -1,159 +1,394 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imran Ahsan - PhD Candidate at Illinois State University</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-       
-    
-        .section {
-            text-align: center; /* Center text in sections */
-            margin: 40px 0; /* Margin for spacing */
-            padding: 20px; /* Padding for sections */
-        }
-        h2 {
-            font-weight: bold; /* Bold headers */
-            margin-bottom: 20px; /* Spacing below headers */
-        }
-     
-        .btn-primary {
-            background-color: #ADC4CE; /* Light greenish-blue for buttons */
-            border: none; /* No border for buttons */
-        }
-        .btn-primary:hover {
-            background-color: #96B6C5; /* Darker shade on hover */
-        }
-    </style>
-</head>
-<body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Imran Ahsan - PhD Candidate at Illinois State University
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-      <a class="navbar-brand" href="#">Imran Ahsan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <!-- Search Bar -->
-          <form class="d-flex ms-3 search-form">
-              <input 
-                  class="form-control" 
-                  type="search" 
-                  placeholder="Search..." 
-                  aria-label="Search" 
-              />
-              <button 
-                  class="btn btn-primary ms-2" 
-                  type="submit"
-              >Search</button>
-          </form>
-      </div>
-  </div>
-</nav>
-
-
-<!-- Projects Section -->
-<section class="section" id="projects">
-    <h2>Projects</h2>
-    <ul class="list-unstyled">
-        <li>
-            <strong>Project One:</strong> <br>
-            Description of Project One, which involves XYZ.
-        </li>
-        <li class="mt-4">
-            <strong>Project Two:</strong> <br>
-            Description of Project Two, focusing on ABC.
-        </li>
-        <li class="mt-4">
-            <strong>Project Three:</strong> <br>
-            Description of Project Three, highlighting DEF.
-        </li>
-    </ul>
-
-    <h2>Publications</h2>
-    <ul class="list-unstyled">
-        <li>
-            <strong>Ahsan, I.</strong> (2024). Title of Publication One. <em>Journal Name</em>. DOI: 10.1234/example1
-        </li>
-        <li class="mt-4">
-            <strong>Ahsan, I.</strong> (2023). Title of Publication Two. <em>Journal Name</em>. DOI: 10.1234/example2
-        </li>
-        <li class="mt-4">
-            <strong>Ahsan, I.</strong> (2022). Title of Publication Three. <em>Journal Name</em>. DOI: 10.1234/example3
-        </li>
-    </ul>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section" style="background-color:#96B6C5;; padding: 40px 20px; border-radius: 8px;">
-    <div class="container">
-        <h2 style="font-weight: bold; margin-bottom: 20px; text-align: center;">Contact</h2>
-        <p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;">Feel free to reach out for collaborations or inquiries.</p>
-        <ul class="contact-list list-unstyled" style="text-align: center; font-size: 1.1em;">
-            <li style="margin-bottom: 15px;">
-                <i class="fas fa-envelope" style="color: #007bff; border-radius: 50%; background-color: #F1F0E8; padding: 10px; margin-right: 8px;"></i>
-                Email: <a href="mailto:imran.ahsan@ilstu.edu" style="color: #007bff; text-decoration: none;">imran.ahsan@ilstu.edu</a>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <i class="fab fa-linkedin" style="color: #007bff; border-radius: 50%; background-color: #F1F0E8; padding: 10px; margin-right: 8px;"></i>
-                LinkedIn: <a href="https://linkedin.com/in/imran-ahsan" target="_blank" style="color: #007bff; text-decoration: none;">linkedin.com/in/imran-ahsan</a>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <i class="fab fa-twitter" style="color: #007bff; border-radius: 50%; background-color: #F1F0E8; padding: 10px; margin-right: 8px;"></i>
-                Twitter: <a href="https://twitter.com/imran_ahsan" target="_blank" style="color: #007bff; text-decoration: none;">@imran_ahsan</a>
-            </li>
-        </ul>
-    </div>
-  </section>
+  <style>
+    /* Custom Navbar Background */
+    .bg-custom-blue {
+      background-color: #96B6C5; /* Navbar background */
+    }
   
+    /* Navbar Brand */
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: #1F1F1F; /* Adjust text color for contrast */
+    }
+  
+    /* Navbar Links */
+    .navbar-link {
+      color: #1F1F1F; /* Default link color */
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+  
+    .navbar-link:hover {
+      background-color: #ADC4CE; /* Hover effect background */
+      color: #FFF; /* Hover effect text color */
+      border-radius: 5px;
+      padding: 5px;
+    }
+  </style>
+  
+ </head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-custom-blue shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+     <a class="text-xl font-bold text-gray-800 navbar-brand" href="#">
+      Imran Ahsan
+     </a>
+     <div class="flex items-center">
+      <ul class="hidden md:flex space-x-4">
+       <li>
+        <a class="navbar-link" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="navbar-link" href="research.html">
+         Research
+        </a>
+       </li>
+       <li>
+        <a class="navbar-link" href="experience.html">
+         Experience
+        </a>
+       </li>
 
-<!-- Footer -->
-<footer class="footer text-center">
-    <div class="container">
-        <p>&copy; 2024 Imran Ahsan. All Rights Reserved.</p>
+       
+       <li>
+        <a class="navbar-link" href="#contact">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <form class="flex ml-4">
+       <input aria-label="Search" class="form-input px-4 py-2 rounded-l-md border border-gray-300" placeholder="Search..." type="search"/>
+       <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md" type="submit">
+        Search
+       </button>
+      </form>
+     </div>
+    </div>
+ </nav>
+ <div style="margin-bottom: 20px;"></div><div style="margin-bottom: 20px;"></div><div></div>
+    
+
+
+
+
+
+ <div style="margin-bottom: 20px;"></div><div style="margin-bottom: 20px;"></div><div></div>
+
+ <header class="relative">
+    <img alt="A professional banner image with a light background of bookshelves and a desk, representing academic research" class="w-full h-60 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/AmjMSI056z6yE9FBq2L7SWTIfdgSCekNXQg9RyNf9mJ5kXunA.jpg" width="1920"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-500 opacity-75">
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center">
+     <h1 class="text-5xl font-bold text-white drop-shadow-lg">
+      Research and Projects
+     </h1>
+    </div>
+   </header>
+ 
+ 
+
+
+
+  <!-- Header -->
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+   <!-- Areas of Interest -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Areas of Interest
+    </h2>
+    <ul class="list-disc list-inside text-gray-700">
+     <li>
+      Comparative Politics
+     </li>
+     <li>
+      Public Policy
+     </li>
+     <li>
+      Political Methodology
+     </li>
+     <li>
+      Politics of Science and Technology
+     </li>
+     <li>
+      AI in Government
+     </li>
+    </ul>
+   </section>
+   <!-- Conference Presentations -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Conference Presentations
+    </h2>
+    <ul class="list-disc list-inside text-gray-700">
+     <li>
+      Ahsan, Md. Imran. (2025, April 4) (Forthcoming). Partisan Perspectives on AI Confidence: Government vs. Private Sector: Exploring How Political Affiliations Influence Trust in AI Applications. Midwest Political Science Association Annual Meeting, Chicago, IL.
+     </li>
+     <li>
+      Ahsan, M. I., &amp; Akter, S. (2024). Assessing the Impact of Water Salinity on Women’s Health in Coastal Areas: An Analysis Based on the Right to Water and Sanitation. Illinois State University Repository.
+     </li>
+     <li>
+      Ahsan, I. (2016, December). ICEOCF-1471222: An Inescapable Trap, Understanding Lay Perceptions, Causes, and Consequences of Urban Poverty. International Conference on Envisioning Our Common Future, SAYRIAD, University of Dhaka.
+     </li>
+    </ul>
+   </section>
+   <!-- Research Experience -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Research Experience
+    </h2>
+    <ul class="list-disc list-inside text-gray-700">
+     <li>
+      <strong>
+       Research Assistant, Politics and Government, Illinois State University
+      </strong>
+      (May–July 2024)
+      <p>
+       Study on the impacts of urban rivers’ floating gardens on surrounding communities in Chicago.
+      </p>
+     </li>
+     <li>
+      <strong>
+       Field Research Coordinator, James P Grand School of Public Health, BRAC University
+      </strong>
+      (Nov 2018–Dec 2020)
+      <p>
+       Research (Quantitative) on sexual and reproductive health of persons with disabilities.
+      </p>
+     </li>
+     <li>
+      <strong>
+       Junior Consultant, Moonshot CVE, London
+      </strong>
+      (May–Dec 2019)
+      <p>
+       Coordinator, Research Project on Youth Engagement in Violent Extremism.
+      </p>
+     </li>
+    </ul>
+   </section>
+   <!-- Research Highlights -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Research Highlights
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Abstract representation of AI confidence in government and private sector" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/zG8e5uolLqSEPihNF68xlCerDDDBZjsuroTluvwYRdXVTL3TA.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Partisan Perspectives on AI Confidence
+       </h3>
+       <p class="text-gray-600">
+        Exploring How Political Affiliations Influence Trust in AI Applications.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Illustration of water salinity impact on women's health" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/xBtWHM7EnK5mKlx9dgqMGRyEOKxAKNLFfVeNXewAPZW1mWunA.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Impact of Water Salinity on Women’s Health
+       </h3>
+       <p class="text-gray-600">
+        An Analysis Based on the Right to Water and Sanitation.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Urban poverty and its causes and consequences" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/GKKRXa0XsZqgKl3Fhm2LbGdRjJyjvUI3VtuB62IxLR610y9E.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Understanding Lay Perceptions of Urban Poverty
+       </h3>
+       <p class="text-gray-600">
+        Causes and Consequences of Urban Poverty.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Ongoing Projects -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Ongoing Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Conceptual image of ethical AI in public service" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5vGFlCfvXlzXaigQcUUdxSPODlQeQNYFcNabo0BrIZgbTL3TA.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Ethical and Trustworthy AI in Public Service Delivery
+       </h3>
+       <p class="text-gray-600">
+        Exploring frameworks for ethical AI implementation in public services.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Illustration of youth engagement in violent extremism" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/YGesCvzoZ01PayOqlnFkFNxSifFeCzvtzbKDLOLvafrkNtcPB.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Youth Engagement in Violent Extremism
+       </h3>
+       <p class="text-gray-600">
+        Research on factors influencing youth involvement in violent extremism.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Floating gardens in urban rivers" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/1FN3uCyYHrKZFBhqShOvA6ogUJ435wWGBPnBuLwzEKI30y9E.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Impacts of Urban Rivers’ Floating Gardens
+       </h3>
+       <p class="text-gray-600">
+        Study on the impacts of floating gardens on surrounding communities.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Publications and Presentations -->
+   <section>
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Publications and Presentations
+    </h2>
+    <ul class="list-disc list-inside text-gray-700">
+     <li>
+      <a class="text-blue-600 hover:underline" href="#">
+       Partisan Perspectives on AI Confidence: Government vs. Private Sector
+      </a>
+      (2025, April 4)
+     </li>
+     <li>
+      <a class="text-blue-600 hover:underline" href="#">
+       Assessing the Impact of Water Salinity on Women’s Health in Coastal Areas
+      </a>
+      (2024)
+     </li>
+     <li>
+      <a class="text-blue-600 hover:underline" href="#">
+       ICEOCF-1471222: An Inescapable Trap
+      </a>
+      (2016, December)
+     </li>
+    </ul>
+   </section>
+  </main>
+  <!-- CV Section -->
+  <section class="bg-gray-200 py-8" id="cv">
+   <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Curriculum Vitae (CV)
+    </h2>
+    <p class="text-gray-700 mb-4">
+     For a detailed overview of my academic background, publications, and work experience, download my CV below.
+    </p>
+    <a class="bg-blue-500 text-white px-4 py-2 rounded" href="assets/cv.pdf" target="_blank" download>Download CV</a>
+
+   </div>
+  </section>
+
+
+
+
+  <!-- Contact Section -->
+  <section class="bg-blue-200 py-8" id="contact">
+   <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Contact
+    </h2>
+    <p class="text-gray-700 mb-4">
+     Feel free to reach out for collaborations or inquiries.
+    </p>
+    <ul class="list-none text-gray-700">
+     <li class="mb-4">
+      <i class="fas fa-envelope text-blue-500">
+      </i>
+      Email:
+      <a class="text-blue-600 hover:underline" href="mailto:imran.ahsan@ilstu.edu">
+       imran.ahsan@ilstu.edu
+      </a>
+     </li>
+     <li class="mb-4">
+      <i class="fab fa-linkedin text-blue-500">
+      </i>
+      LinkedIn:
+      <a class="text-blue-600 hover:underline" href="https://linkedin.com/in/imran-ahsan" target="_blank">
+       linkedin.com/in/imran-ahsan
+      </a>
+     </li>
+     <li class="mb-4">
+      <i class="fab fa-twitter text-blue-500">
+      </i>
+      Twitter:
+      <a class="text-blue-600 hover:underline" href="https://twitter.com/imran_ahsan" target="_blank">
+       @imran_ahsan
+      </a>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black shadow mt-8">
+    <div class="container mx-auto px-4 py-6 text-center text-white">
+        <p>
+            © 2024 Imran Ahsan. All Rights Reserved.
+        </p>
     </div>
 </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const searchInput = document.querySelector('.search-form .form-control');
 
-      searchInput.addEventListener('input', function (event) {
-          event.preventDefault(); // Prevent form submission
-          const filter = searchInput.value.toLowerCase();
-          const sections = document.querySelectorAll('.section');
-          let found = false; // Variable to check if a match is found
 
-          sections.forEach(section => {
-              const textContent = section.textContent.toLowerCase();
-              const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
 
-              if (textContent.includes(filter) || sectionTitle.includes(filter)) {
-                  section.style.display = ""; // Show the section
-                  found = true; // A match is found
-              } else {
-                  section.style.display = "none"; // Hide the section
-              }
-          });
 
-          // Scroll to the first visible section if a match is found
-          if (found) {
-              document.querySelector('.section:not([style*="display: none"])').scrollIntoView({ behavior: 'smooth' });
-          }
-      });
-  });
-</script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector('.form-input');
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        searchInput.addEventListener('input', function (event) {
+            event.preventDefault(); // Prevent form submission
+            const filter = searchInput.value.toLowerCase();
+            const sections = document.querySelectorAll('main section');
+            let found = false; // Variable to check if a match is found
+
+            sections.forEach(section => {
+                const textContent = section.textContent.toLowerCase();
+                const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
+
+                if (textContent.includes(filter) || sectionTitle.includes(filter)) {
+                    section.style.display = ""; // Show the section
+                    found = true; // A match is found
+                } else {
+                    section.style.display = "none"; // Hide the section
+                }
+            });
+
+            // Scroll to the first visible section if a match is found
+            if (found) {
+                document.querySelector('main section:not([style*="display: none"])').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
 </html>
